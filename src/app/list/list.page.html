@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      List
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-list>
+        <ion-item *ngFor="let emp of list">
+            <ion-avatar slot="start">
+               <img src="../../assets/image/avtar.png">
+            </ion-avatar>
+            <ion-item-group>
+                <ion-item>{{emp.fullName}}</ion-item>
+                <!-- <ion-item>{{emp.position}} </ion-item>
+                <ion-item>{{emp.mobile}} </ion-item> -->
+              </ion-item-group>
+        </ion-item>
+      </ion-list>
+</ion-content>
